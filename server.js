@@ -1,5 +1,5 @@
 const express = require('express');
-const storeService = require('store-service');
+const storeService = require('./store-service');
 
 const app = express();
 const HTTP_PORT = process.env.PORT || 8080;
