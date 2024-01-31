@@ -1,3 +1,21 @@
+/*********************************************************************************
+
+WEB322 – Assignment 02
+I declare that this assignment is my own work in accordance with Seneca  
+Academic Policy.  No part *  of this assignment has been copied manually 
+or electronically from any other source (including 3rd party web sites)
+ or distributed to other students.
+
+Name: _Jasmeet Kaur_ 
+Student ID: _146412226_ 
+Date: _31/01/2024_
+Cyclic Web App URL: _https://outrageous-blue-tick.cyclic.app/about_
+GitHub Repository URL: _https://github.com/jask63/assignment02_
+
+********************************************************************************/ 
+
+
+
 const express = require('express');
 const storeService = require('./store-service');
 
