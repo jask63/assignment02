@@ -38,12 +38,15 @@ cloudinary.config({
 //This is a upload variable without any disk storage
 const upload = multer(); 
 
-app.use(express.static('public'));
+app.use(express.static(path.join(__dirname, "public")));
+app.use(express.static(path.join(__dirname, "static")));
 
 app.get('/', (req, res) => {
   res.redirect('/about');
 });
-
+app.get("/items/add", (req, res) => {
+  res.sendFile(path.join(__dirname, "/views/additem.html"));
+});
 app.post('/items/add', upload.single('featureImage'), (req, res) => {
   if (req.file) {
       let streamUpload = (req) => {
@@ -146,6 +149,10 @@ app.get('/categories', (req, res) => {
 
 app.use((req, res) => {
   res.status(404).json({ error: 'Page Not Found' });
+});
+app.use(function (err, req, res, next) {
+  console.error(err.stack);
+  res.status(500).send("Something broke!");
 });
 
 storeService.initialize()
