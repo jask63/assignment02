@@ -6,11 +6,11 @@ Academic Policy.  No part *  of this assignment has been copied manually
 or electronically from any other source (including 3rd party web sites)
  or distributed to other students.
 
-Name: _Jasmeet Kaur_ 
-Student ID: _146412226_ 
-Date: _31/01/2024_
-Cyclic Web App URL: _https://outrageous-blue-tick.cyclic.app/about_
-GitHub Repository URL: _https://github.com/jask63/assignment02_
+Name: Jasmeet Kaur
+Student ID: 146412226 
+Date: 31/01/2024
+Cyclic Web App URL: https://rich-teal-coati-slip.cyclic.app/
+GitHub Repository URL: https://github.com/jask63/assignment02
 
 ********************************************************************************/ 
 
