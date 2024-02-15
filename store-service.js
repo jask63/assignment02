@@ -72,7 +72,6 @@ const getCategories = () => {
     }
   });
 };
-
 const addItem = (newItem) => {
   return new Promise((resolve, reject) => {
     if (newItem.published === undefined) {
