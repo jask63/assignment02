@@ -22,6 +22,7 @@ const multer = require("multer");
 const cloudinary = require('cloudinary').v2;
 const streamifier = require('streamifier');
 const { addItem } = require('./store-service');
+const path = require('path');
 
 const app = express();
 const HTTP_PORT = process.env.PORT || 8080;
@@ -38,8 +39,8 @@ cloudinary.config({
 //This is a upload variable without any disk storage
 const upload = multer(); 
 
-app.use(express.static(path.join(__dirname, "public")));
-app.use(express.static(path.join(__dirname, "static")));
+app.use(express.static("static"));
+
 
 app.get('/', (req, res) => {
   res.redirect('/about');
