@@ -48,6 +48,7 @@ app.get('/', (req, res) => {
 app.get("/items/add", (req, res) => {
   res.sendFile(path.join(__dirname, "/views/additem.html"));
 });
+
 app.post('/items/add', upload.single('featureImage'), (req, res) => {
   if (req.file) {
       let streamUpload = (req) => {
